@@ -31,6 +31,14 @@ header {
   width: 1200px;
 }
 
+section, footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .flex-header {
   display: flex;
   flex-direction: row;
@@ -42,9 +50,58 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-items: unset;
 }
 
 .white {
   color: var(--font-color);
+}
+
+.menu > ul {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 24px;
+}
+
+#page-description {
+  padding: 200px 0;
+}
+
+.section-one {
+  background-image: url(../images/banner.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.form {
+  max-width: 570px;
+}
+
+.form input {
+  min-width: 270px;
+  min-height: 50px;
+  padding-left: 20px;
+  margin-bottom: 1.5rem;
+  border: 2px solid #cacaca;
+  border-radius: 3px;
+}
+
+.form button {
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+
+@media (max-width: 415px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
